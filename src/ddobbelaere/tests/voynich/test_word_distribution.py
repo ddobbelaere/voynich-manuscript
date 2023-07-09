@@ -51,5 +51,5 @@ def test_word_distribution(manuscript: Manuscript):
                 example_words += "..."
 
             print(
-                f"{num_times:<{column_width}}{num_words:<{column_width}}{example_words:<{column_width}}"
+                f"{num_times:<{column_width}}{num_words:<{column_width}}{example_words}"
             )
