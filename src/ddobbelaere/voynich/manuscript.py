@@ -26,7 +26,7 @@ class Manuscript:
 
     def _init(self) -> None:
         # Convert transcription to list of words.
-        word_pattern: str = r"[a-z*]+"
+        word_pattern: str = r"[a-zA-Z0-9*]{2,}"
         tag_pattern: str = r"<.+>"
         self._words = re.findall(
             word_pattern, re.sub(tag_pattern, "", self._transcription)
