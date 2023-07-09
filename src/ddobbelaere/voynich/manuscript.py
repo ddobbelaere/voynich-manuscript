@@ -15,7 +15,9 @@ class Manuscript:
         self._transcription = (
             transcription
             or open(
-                Path(__file__).parent.joinpath("data/transcription.txt"),
+                Path(__file__).parent.joinpath(
+                    "data/transliterations/Takeshi_Takahashi.txt"
+                ),
                 encoding="utf8",
             ).read()
         )
